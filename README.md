@@ -10,3 +10,7 @@ adding index.html file!! Hello
 
 testing connectivity
 also deleting non required file.
+
+## Local stuff of branch
+
+1.Open index.html in your browser
