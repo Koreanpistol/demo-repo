@@ -4,11 +4,12 @@ Demo for repository.
 
 ## HTML.
 
-Trying out different stuff around strictly HTML
+Trying out different stuff around strictly HTML.
 #1 Tags and Attributes.
 #2 Hyperlinks.
 #3 Images.
 #4 Audio.
+#5 Video.
 
 ## 23.03.2022
 
