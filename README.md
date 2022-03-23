@@ -7,18 +7,19 @@ Demo for repository.
 <hr>
 Trying out different stuff around strictly HTML.
 <hr>
+*1 Tags and Attributes.
 <br>
-#1 Tags and Attributes.
+*2 Hyperlinks.
 <br>
-#2 Hyperlinks.
+*3 Images.
 <br>
-#3 Images.
+*4 Audio.
 <br>
-#4 Audio.
+*5 Video.
 <br>
-#5 Video.
+*6 Text Formatting.
 <br>
-#6 Text Formating.
+*7 List options.
 <br>
 
 ## 23.03.2022
