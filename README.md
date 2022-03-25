@@ -21,7 +21,9 @@ Trying out different stuff around strictly HTML.
 <br>
 *7 List options.
 <br>
+*8 Tables.
+<br>
 
-## 23.03.2022
+## 25.03.2022
 
-Trying out different stuff on basic HTML. Adding new sections with each commit.
+basic of HTML. Continue adding new sections with each commit.
