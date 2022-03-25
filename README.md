@@ -31,6 +31,8 @@ Trying out different stuff around strictly HTML.
 <br>
 *12 Iframes.
 <br>
+*13 Buttons.
+<br>
 
 ## 25.03.2022
 
