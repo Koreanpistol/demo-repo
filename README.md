@@ -25,6 +25,7 @@ Trying out different stuff around strictly HTML.
 <br>
 *9 Colors.
 <br>
+*10 Span and Div.
 
 ## 25.03.2022
 
