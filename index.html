@@ -220,11 +220,94 @@
             <a href="https://www.google.com" target=_blank><button style="background-color: #222222;color: antiquewhite;border-radius: 5px;cursor: pointer;">Google!</button></a>
             <button onclick="doSomething()" style="background-color: #222222;color: antiquewhite;border-radius: 5px;cursor: pointer;">doSomething</button>
                 <div id="colorTest">Click button and it will maybe do something</div>
-                <script>
-                    function doSomething(){
-                        document.getElementById("colorTest").innerHTML = "It did something"
-                    }
-                </script>
+            <hr>
+            <h1>Forms</h1>
+            <hr>
+            <!--    required attribute is a boolean attribute specifies that the element must be filled before submiting.
+                    maxlength attribute defines max number of characters User can enter into <input> or <textarea>
+                    min or max attribute defines minimum value or maximum value that is acceptable and valid for the input containing attribute.
+                    type="reset" resets form to default values-->
+            <form action="action_page.php" method="POST">
+                <div>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="First Name" required>
+                </div>
+                <br>
+                <div>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+                </div>
+                <br>
+                <div>
+                <label for="fpsw">First Password:</label>
+                <input type="password" id="fpsw" name="fpsw" placeholder="Password" required maxlength="12">
+                </div>
+                <br>
+                <div>
+                <label for="rpsw">Repeat Password:</label>
+                <input type="password" id="rpsw" name="rpsw" placeholder="Repeat Password" required maxlength="12">
+                </div>
+                <br>
+                <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone number" required>
+                    </div>
+                    <br>
+                <div>
+                    <label for="bdate">Birth Date:</label>
+                    <input type="date" id="bdate" name="bdate" required>
+                    </div>
+                    <br>
+                <div>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" placeholder="Quantity" required min="0" max="99">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="title">Title:</label>
 
+                        <label for="mr">Mr.</label>
+                        <input type="radio" id="mr" name="title" value="Mr.">
+
+                        <label for="mrs">Mrs.</label>
+                        <input type="radio" name="title" id="mrs" value="Mrs.">
+
+                        <label for="phd">PhD.</label>
+                        <input type="radio" name="title" id="phd" value="PhD.">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="payment">Payment:</label>
+                        <select name="payment" id="payment" required>
+                            <option value="visa">Visa</option>
+                            <option value="masterCard">MasterCard</option>
+                            <option value="giftCard">GiftCard</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="subcribe">Subscribe:</label>
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                    </div>
+                    <br>
+                <div>
+                    <input type="submit">
+                </div>
+                <br>
+                <div>
+                    <input type="reset">
+                </div>
+            
+            </form>
+            <script>
+                function doSomething(){
+                    document.getElementById("colorTest").innerHTML = "It did something"
+                }
+            </script>
 </body>
 </html>
