@@ -23,6 +23,8 @@ Trying out different stuff around strictly HTML.
 <br>
 *8 Tables.
 <br>
+*9 Colors.
+<br>
 
 ## 25.03.2022
 
