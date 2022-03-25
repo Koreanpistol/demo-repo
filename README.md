@@ -26,6 +26,11 @@ Trying out different stuff around strictly HTML.
 *9 Colors.
 <br>
 *10 Span and Div.
+<br>
+*11 Meta tags (inspect source)
+<br>
+*12 Iframes.
+<br>
 
 ## 25.03.2022
 
