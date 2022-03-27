@@ -11,6 +11,302 @@
     <h1>Welcome to second page, if you wish to return press the link below to return to main page.</h1>
     <hr>
     <a href="index.html" title="This is bring you back to main page." target=_self ><h2>Return.</h2></a>
-    
+    <hr>
+    <h1>Hello world!</h1>
+    <hr> <!-- hr stand for Horizontal Rule -->
+    <!-- Headers of different sizes where h1 is largest and h6 is smallest -->
+    <h1>(h1) Header</h1>
+    <h2>(h2) Header</h2>
+    <h3>(h3) Header</h3>
+    <h4>(h4) Header</h4>
+    <h5>(h5) Header</h5>
+    <h6>(h6) Header</h6>
+    <p>This is some sample text</p> 
+    <br> <!-- br stand for Break line-->
+    <!-- Lorem generates random text, can be set for specific value with numbers such as:lorem(numberValue) [lorem100]-->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos aperiam itaque doloribus reiciendis unde? Adipisci, in sed maiores ipsa vitae voluptate sapiente ab! Cupiditate nulla reiciendis nostrum placeat, nihil rem eos sequi voluptates vero praesentium totam aut corrupti perferendis atque, libero nesciunt eligendi. Non error aperiam recusandae itaque dolorum laborum. Sit neque a quia nemo optio, magnam obcaecati aperiam aspernatur sequi amet quo nihil eaque dignissimos labore, est itaque? Dolores voluptate alias, ullam sint suscipit dolorem laboriosam! Voluptatibus accusantium laboriosam, rerum consectetur animi repellat modi alias fuga debitis quo quasi minus recusandae possimus omnis voluptatum eaque nihil aliquid enim inventore.</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Hic ab molestiae, quam doloremque, autem quasi laboriosam officiis nostrum ipsa aliquam est impedit,
+       reprehenderit odio? Quasi autem perferendis minima cumque! Quaerat?</p>
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam obcaecati dolore eum id quam molestias velit nam odio deleniti architecto error, repellat quae placeat suscipit cupiditate asperiores vel ut numquam!</p>
+    <hr>
+    <h1>Hyperlinks</h1>
+    <hr>
+    <!-- a stands for anchor tag , tag defines a hyperlink 
+        href is attribute specifies URL, 
+        target=_self attribute (is default) sends you towards hyperlink,
+        target=_blank attribute (is custom) opens link in different window tab of default browser,
+        title attribute is a comment that displays when you mouseover a hyperlink.-->
+    <a href="page2.html" target=_self title="This takes you to page2.">
+       <h2>Second page</h2>
+    </a>
+    <a href="https://www.google.com" target=_blank title="This takes you to Google.">
+        <h2>Google</h2>
+    </a>
+    <a href="mailto:fakemailfortest321123@gmail.com" target=_self title="This will try to contact me.">
+        <h2>Contact me via Email</h2>
+    </a>
+    <hr>
+    <!-- height attribute allows to resize img while scale at same time width, thou you can adjust width manually as well.
+         alt attribute specifies alternative text if image cannot be displayed.-->
+    <h1>Images</h1>
+    <h3>Images of FF14 bosses , if you click on any image it will send you towards youtube to see encounter of this boss</h3>
+    <hr>
+    <a href="https://youtu.be/kCH-2wl9skI" target=_blank><img src="images/image1.jpg" height="200px" alt="This is image of ifrit" title="Video of Ifrit"></a>
+    <a href="https://youtu.be/6Y3QlZwZF7g" target=_blank><img src="images/image2.jpg" height="200px" alt="This is image of Ultima" title="Video of Ultima"></a>
+    <a href="https://youtu.be/OQflf9qGhCk" target=_blank><img src="images/image3.png" height="200px" alt="This is image of Leviathan" title="Video of Leviathan"></a>
+    <a href="https://youtu.be/X5FNLWS9qQw" target=_blank><img src="images/image4.png" height="200px" width="350px" alt="This is image of Odin" title="Video of Odin"></a>
+    <hr>
+    <h1>Audio</h1>
+    <h3>Audio files in HTML , 4 pieces of Attack on titan OST</h3>
+        <!-- controls boolean gives control to user for audio file.
+             autoplay attribute automatically turns the sound on as the page loads.
+             muted boolean attribute specifies audio to be muted.
+             loop attribute restarts audio when it ends each time.
+             source specifies multiple media resources for audio. -->
+        <!-- <audio controls autoplay muted loop>
+            <source src="sounds/2 The Reluctant Heroes.mp3">
+            <source src="sounds/2 The Reluctant Heroes.wav">
+            This Browser doesn't support audio files.
+             </audio> -->
+        <audio controls src="sounds/2 The Reluctant Heroes.mp3"></audio>
+        <br>
+        <audio controls src="sounds/03 eye-water.mp3"></audio>
+        <br>
+        <audio controls src="sounds/7 Vogel im Kafig.mp3"></audio>
+        <br>
+        <audio controls src="sounds/10 E.M.A.mp3"></audio>
+        <hr>
+        <h1>Video</h1>
+        <hr>
+        <!-- Mp4,WebM,Ogg-->
+        <!-- controls boolean gives control to user for video file.
+             autoplay attribute automatically turns the video on as the page loads.
+             muted boolean attribute specifies audio to be muted on a video.
+             loop attribute restarts video when it ends each time.
+             source specifies multiple media resources for video tag. -->
+        <!-- <video controls autoplay muted loop>
+            <source src="videos/What-are-you-doing.mp4">
+            <source src="videos/What-are-you-doing.webm">
+            <source src="videos/What-are-you-doing.ogg">
+             </video>
+            This Browser doesn't support video files. -->
+        <video src="videos/What-are-you-doing.mp4" controls height="250px"></video>
+        <video src="videos/video0-24.mov" controls height="250px"></video>
+        <video src="videos/The Tifa Lockhart Experience  Italy 2022 Edition.mp4" controls height="250px"></video>
+        <video src="videos/aZrB3j3_460svvp9.webm" controls height="250px" width="200px"></video>
+        <hr>
+        <h1>Text Formatting</h1>
+        <hr>
+        <!-- Text formatting tags
+            <b> stands for bold
+            <i> stands for italic
+            <big> stands for bigger text
+            <small> stands for smaller text
+            <sub> stands for subscriptic text
+            <sup> stands for superscriptic text
+            <ins> stands for inserted text
+            <del> stands for deleted text
+            <mark> stands for marked text -->
+        <p>This is normal text</p>
+        <p>This is <b>bold</b> text</p>
+        <p>This is <i>italic</i> text</p>
+        <p>This is <big>big</big> text</p>
+        <p>This is <small>small</small> text</p>
+        <p>This is <sub>subscript</sub> text</p>
+        <p>This is <sup>superscript</sup> text</p>
+        <p>This is <ins>inserted</ins> text</p>
+        <p>This is <del>deleted</del> text</p>
+        <p>This is <mark>marked</mark> text</p>
+        <hr>
+        <h1>Lists</h1>
+        <hr>
+        <h3>Unordered List</h3>
+            <ul>
+                <li>pizza dough</li>
+                <li>tomato sauce</li>
+                <li>cheese</li>
+                <li>toppings
+                    <ul>
+                        <li>pepperoni</li>
+                        <li>mushrooms</li>
+                        <li>peppers</li>
+                    </ul>
+                </li>
+            </ul>
+        <h3>Ordered List</h3>
+            <ol type="1"> <!-- type attribute is for how ordered lists are compared and sorted-->
+                <li>eat breakfast</li>
+                <li>workout</li>
+                <li>take shower</li>
+                <li>leave for work</li>
+            </ol>    
+        <h3>Description List</h3>
+        <!-- description list <dl> requires tags <dt> description term and <dd> description definition-->
+            <dl>
+                <dt>HTML</dt>
+                <dd>This adds structure to a webpage.</dd>
+                <dt>CSS</dt>
+                <dd>This adds style to a webpage.</dd>
+                <dt>JavaScript</dt>
+                <dd>This adds functionality to a webpage.</dd>
+            </dl>
+            <hr>
+            <h1>Tables</h1>
+            <hr>
+            <!-- <table> is HTML structure for creatings rows and columns in webpage
+                 <tr> is HTML element defines table row of cells in table 
+                 <th> is HTML element defines table header of cells in table
+                 <td> is HTML element defines table date of cells in table
+                 bgcolor is an attribute used to set background color of HTML element
+                 align is an attribute used to set value of content (default is left) can be set as justify , left , right , center , char-->
+            <h3>Store Hours</h3>
+            <table bgcolor="black" width="700px">
+                <tr bgcolor="grey">
+                    <th width="100px">Sunday</th>
+                    <th width="100px">Monday</th>
+                    <th width="100px">Tuesday</th>
+                    <th width="100px">Wednesday</th>
+                    <th width="100px">Thursday</th>
+                    <th width="100px">Friday</th>
+                    <th width="100px">Saturday</th>
+                </tr>
+                <tr bgcolor="lightgrey" align="center">
+                    <td>Closed</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>Closed</td>
+                </tr>
+            </table>
+            <hr>
+            <h1>Colors</h1>
+            <hr>
+            <!--style is attribute that allows to style properties of HTML element.-->
+            <div style="background-color: black;">
+                <h1 style="color: red">New header 1</h1>
+                <h1 style="color: rgb(140, 255, 244)">New header 2</h1>
+                <h1 style="color:#107aa3">New header 3</h1>
+                <p style="background-color:#222222;color:#107aa3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia odio nihil impedit beatae omnis? Harum eaque quidem aut aperiam aspernatur tempora rem sit porro ex accusamus, quisquam iure, ad, ullam perspiciatis corporis quae voluptate vel illum dolor eos obcaecati? Amet, optio adipisci quasi placeat accusantium suscipit impedit dolorum delectus similique facilis, deserunt facere, rem at architecto tempore dignissimos sapiente tenetur voluptatibus iste quos consequuntur vel sequi? Consequuntur nulla molestiae iste ut totam odit, repellat quod vel asperiores! Laudantium eveniet officiis ratione non voluptatibus aliquam rerum voluptas quisquam repellendus repellat libero nemo corporis quia vero natus sit quas iusto, odit repudiandae?</p>
+            </div>
+            <hr>
+            <h1>Span and Div Section</h1>
+            <hr>
+            <!-- <span> is HTML element , inline container for phrasing content , which does not inherently represent anything , it can be used 
+                      to group elements for styling purposes-->
+            <!-- <div> tag defines a division or a section in a HTML document , it is used as a container for HTML elements-->
+            <div style="border: #222222;background-color: #bbc2c5;">
+                <h1 style="text-align: center;">Another Header</h1>
+                <p><span style="color:red">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> Dolorem repellat, omnis non velit dignissimos eaque cum corrupti enim harum, pariatur voluptate officia dicta possimus aliquid reiciendis odit ipsa ut impedit autem expedita magnam perspiciatis corporis minima accusamus! Harum voluptatem rerum, reprehenderit exercitationem alias possimus beatae porro eveniet amet omnis at fugit a eum praesentium debitis eius, repellat tenetur distinctio, quidem repellendus nostrum? Temporibus molestias at necessitatibus magnam expedita, cum recusandae illum dicta, reprehenderit quam sit facilis reiciendis. A, minima asperiores? Fugit sequi magni iusto iure repellat! Modi perferendis aspernatur incidunt laboriosam. Cum impedit dicta voluptatibus quia consectetur et excepturi ab?</p>
+                <p><span style="color:red">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> Voluptate consequatur, nemo blanditiis quos sunt voluptatem alias facilis excepturi molestias quod, sed ullam consectetur tenetur iusto maiores minus temporibus optio suscipit quas cupiditate. Esse vel pariatur quae necessitatibus fugiat aperiam praesentium, eligendi laudantium, illo quasi temporibus repellendus laboriosam molestias perferendis ut numquam accusamus? Facilis quod nam sint asperiores. Facere ratione, corporis animi quo aliquid in officiis odio, sequi voluptate, nobis soluta cumque. Repellat illo, voluptas architecto ad voluptate ducimus, accusantium culpa eveniet laboriosam tenetur nesciunt iste consequatur atque dolorem! Ullam a esse cumque repudiandae tenetur iste asperiores eum eveniet facere repellendus!</p>
+                <p><span style="color:red">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> Ex sit voluptatum nulla dolorum animi maiores distinctio inventore? Explicabo iusto amet fugiat ad accusamus repudiandae exercitationem harum consectetur, quibusdam hic esse cumque enim animi illum? Voluptates libero debitis rerum odit ea illum adipisci alias, distinctio, officia perferendis asperiores corporis perspiciatis numquam laudantium. Qui numquam officia velit quos, aliquam veritatis corrupti pariatur, voluptatum corporis necessitatibus et explicabo nulla perspiciatis provident maiores tempore cum obcaecati? Et, omnis! Praesentium rerum ipsam, accusantium adipisci eaque exercitationem totam sapiente, accusamus magni officiis aliquid sunt autem nam sit error quisquam iste? Sed consectetur sunt eveniet similique libero.</p>
+            </div>
+            <hr>
+            <h1>Iframes</h1>
+            <hr>
+            <!--iframes = embed content from another source into a HTML document for example used for stuff like ADS , also used in hacking technique.
+                most of website blocks iframe tag to that other websites wouldn't impose as original and try to steal user date in doing so.-->
+
+            <iframe src="https://www.bing.com" width="700px" height="300px"></iframe>
+            <iframe style="border:0" src="ad.html" width="500px" height="100px"></iframe>
+            <hr>
+            <h1>Buttons</h1>
+            <hr>
+            <a href="https://www.google.com" target=_blank><button style="background-color: #222222;color: antiquewhite;border-radius: 5px;cursor: pointer;">Google!</button></a>
+            <button onclick="doSomething()" style="background-color: #222222;color: antiquewhite;border-radius: 5px;cursor: pointer;">doSomething</button>
+                <div id="colorTest">Click button and it will maybe do something</div>
+            <hr>
+            <h1>Forms</h1>
+            <hr>
+            <!--    required attribute is a boolean attribute specifies that the element must be filled before submiting.
+                    maxlength attribute defines max number of characters User can enter into <input> or <textarea>
+                    min or max attribute defines minimum value or maximum value that is acceptable and valid for the input containing attribute.
+                    type="reset" resets form to default values-->
+            <form action="action_page.php" method="POST">
+                <div>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="First Name" required>
+                </div>
+                <br>
+                <div>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+                </div>
+                <br>
+                <div>
+                <label for="fpsw">First Password:</label>
+                <input type="password" id="fpsw" name="fpsw" placeholder="Password" required maxlength="12">
+                </div>
+                <br>
+                <div>
+                <label for="rpsw">Repeat Password:</label>
+                <input type="password" id="rpsw" name="rpsw" placeholder="Repeat Password" required maxlength="12">
+                </div>
+                <br>
+                <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone number" required>
+                    </div>
+                    <br>
+                <div>
+                    <label for="bdate">Birth Date:</label>
+                    <input type="date" id="bdate" name="bdate" required>
+                    </div>
+                    <br>
+                <div>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" placeholder="Quantity" required min="0" max="99">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="title">Title:</label>
+
+                        <label for="mr">Mr.</label>
+                        <input type="radio" id="mr" name="title" value="Mr.">
+
+                        <label for="mrs">Mrs.</label>
+                        <input type="radio" name="title" id="mrs" value="Mrs.">
+
+                        <label for="phd">PhD.</label>
+                        <input type="radio" name="title" id="phd" value="PhD.">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="payment">Payment:</label>
+                        <select name="payment" id="payment" required>
+                            <option value="visa">Visa</option>
+                            <option value="masterCard">MasterCard</option>
+                            <option value="giftCard">GiftCard</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="subcribe">Subscribe:</label>
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                    </div>
+                    <br>
+                <div>
+                    <input type="submit">
+                </div>
+                <br>
+                <div>
+                    <input type="reset">
+                </div>
+            
+            </form>
+            <script>
+                function doSomething(){
+                    document.getElementById("colorTest").innerHTML = "It did something"
+                }
+            </script>
 </body>
 </html>
