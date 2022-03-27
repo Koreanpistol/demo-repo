@@ -2,11 +2,14 @@
 
 Demo for repository.
 
-## HTML.
+## CSS.
 
 <hr>
-Trying out different stuff around strictly HTML.
+27.03.2022 New section for CSS , will updated with each commit.
 <hr>
+
+## 27.03.2022 HTML.
+
 *1 Tags and Attributes.
 <br>
 *2 Hyperlinks.
@@ -34,6 +37,3 @@ Trying out different stuff around strictly HTML.
 *13 Buttons.
 <br>
 *14 Form.
-## 25.03.2022
-
-basic of HTML. Continue adding new sections with each commit.
