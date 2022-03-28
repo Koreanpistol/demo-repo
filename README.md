@@ -4,8 +4,18 @@ Demo for repository.
 
 ## CSS.
 
+<br>
+*1 Basic stuff around CSS.
+<br>
+*2 Fonts
+<br>
+*3 Borders
+<br>
+*4 Backgrounds
+<br>
+*5 Margins
 <hr>
-27.03.2022 New section for CSS , will updated with each commit.
+28.03.2022 New section for CSS , will updated with each commit.
 <hr>
 
 ## 27.03.2022 HTML.
