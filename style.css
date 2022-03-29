@@ -111,3 +111,180 @@
   margin-left: 33%;
   margin-right: auto;
 }
+
+.imgfloat img {
+  float: right; /* float = positions element to left or right side of container ex. Popular for wrapping elements around images.*/
+}
+.imgfloat p {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: left;
+}
+
+#dezuteVienas {
+  border: solid 2px black;
+  border-radius: 5px;
+  height: 250px;
+  width: 250px;
+  background: linear-gradient(to bottom, rgb(197, 196, 196), rgb(46, 46, 46));
+  position: relative;
+  left: 200px;
+
+  /*positions : absolute , relative , sticky(good for ads) , static ,*/
+}
+
+#dezuteDu {
+  border: solid 2px black;
+  border-radius: 5px;
+  height: 100px;
+  width: 100px;
+  background: linear-gradient(to right, #7190e6, #12caf8);
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+
+#anchorTag:link {
+  color: rgb(0, 0, 0);
+}
+#anchorTag:visited {
+  color: rgb(83, 149, 94);
+}
+#anchorTag:hover {
+  color: red;
+}
+#anchorTag:active {
+  color: yellow;
+}
+#btn {
+  background-color: aliceblue;
+  color: brown;
+}
+#btn:active {
+  color: #010102;
+  background-color: aqua;
+}
+#btn:hover {
+  background-color: red;
+  color: black;
+}
+/* #list li:nth-child(1) {
+  background-color: yellow;
+} */
+#list li:nth-child(even) {
+  background-color: skyblue;
+}
+#list li:nth-child(odd) {
+  background-color: powderblue;
+}
+#list li:nth-child(4n) {
+  background-color: yellow;
+}
+#list li:nth-child(3n + 2) {
+  background-color: crimson;
+}
+
+#textShadow {
+  font-size: 72px;
+  text-shadow: 5px 5px 5px grey, -5px -5px 5px whitesmoke;
+  box-shadow: 0px 5px 5px lightgrey;
+  border-radius: 5px;
+}
+#textShadow:hover {
+  box-shadow: 0px 5px 1px rgb(189, 189, 189);
+  text-shadow: 5px 5px 5px rgb(165, 165, 165), -5px -5px 5px whitesmoke;
+}
+#anotherBox {
+  border: 4px solid black;
+  width: 250px;
+  height: 250px;
+  font-size: 225px;
+  text-align: center;
+  background-color: lightskyblue;
+  color: black;
+  /* transform: translate(50px, 50px); */
+
+  /* transform: matrix(2, 20deg, 20deg, 2, 250px, 250px); */
+  /* matrix combines following : 
+  
+        scaleX();
+        skewY();
+        skewX();
+        scaleY();
+        translateX();
+        translateY();
+  */
+}
+
+#animationBox {
+  margin-top: 5vh;
+  border: 5px solid black;
+  width: 250px;
+  height: 250px;
+  background-color: #7190e6;
+  color: #010102;
+  font-size: 225px;
+  text-align: center;
+
+  /* animation: mySlide;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out; */
+  /* animation: 3s linear 1s infinite running mySlide; */
+  animation: 3s linear 1s infinite running myColor;
+}
+
+/* #animationBox:hover {
+  animation: 3s linear 1s infinite running mySlide;
+} */
+
+@keyframes mySlide {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: 100%;
+  }
+}
+
+@keyframes myRotation {
+  100% {
+    transform: rotateX(360deg);
+    /* transform: rotateZ(360deg);
+    transform: rotateY(360deg); */
+  }
+}
+
+@keyframes myOpacity {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes myScale {
+  50% {
+    transform: scale(0.5, 0.5);
+  }
+}
+@keyframes myColor {
+  0% {
+    background-color: #2b2bb3;
+  }
+  20% {
+    background-color: #12caf8;
+  }
+  40% {
+    background-color: blueviolet;
+  }
+  60% {
+    background-color: red;
+  }
+  80% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: #2b2bb3;
+  }
+}
