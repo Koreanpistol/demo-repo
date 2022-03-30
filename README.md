@@ -2,7 +2,7 @@
 
 Demo for repository.
 
-## JavaScript
+## JavaScript 30.03.2022
 
 - following will be javascript.
 
@@ -10,11 +10,8 @@ Demo for repository.
 
 ## 29.03.2022 CSS.
 
-<br>
-
 - 1 Basic stuff around CSS.
-
-<br>
+  <br>
 
 - 2 Fonts
   <br>
