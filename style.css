@@ -1,0 +1,32 @@
+.container {
+  text-align: center;
+  font-family: "consolas", sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#countLabel {
+  font-size: 150px;
+  text-align: center;
+}
+
+.btn {
+  border: solid 5px black;
+  height: 100px;
+  width: 250px;
+  background: linear-gradient(rgb(175, 23, 195), rgb(33, 214, 246));
+  font-family: "consolas", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.btn:hover {
+  border: solid 5px rgb(175, 23, 195);
+  color: rgb(175, 23, 195);
+}
+.btn:active {
+  border: solid 5px yellowgreen;
+  color: yellowgreen;
+  background: linear-gradient(rgb(47, 32, 47), rgb(22, 222, 151));
+  /* background: linear-gradient(rgb(22, 222, 151), rgb(47, 32, 47)); */
+}

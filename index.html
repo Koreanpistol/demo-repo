@@ -15,15 +15,47 @@
 <body>
     <header>
         <hr>
+        <div id="responseBox"></div>
+        <hr>
         <a href="page2.html"><h3>HTML</h3></a>
         <a href="page3.html"><h3>CSS</h3></a>
         <hr>
     </header>
     <main>
-
+        <section>
+            <h3>Basic submit</h3>
+            <label for="userName">Enter your name:</label> 
+            <input type="text" id="userName">
+            <label for="userAge">Enter your age:</label>
+            <input type="number" id="userAge">
+            <button id="userInput">Submit</button><br>
+            <div id="responsePrompt"></div>
+        </section>
+        <hr>
+        <section>
+            <h3>HYPOTENUSE CALC PRACTICE PROGRAM</h3>
+            <label for="aTextBox">Side A:</label><br>
+            <input type="text" id="aTextBox"><br>
+            <label for="bTextBox">Side B:</label><br>
+            <input type="text" id="bTextBox"><br>
+            <label id="triangleC">Side C:</label><br>
+            <button id="mySubmitBtn">Submit</button>
+        </section>
+        <hr>
+        <section class="container">
+            <h3>Counter Program:</h3>
+            <label id="countLabel">0</label><br>
+            <button id="decBtn" class="btn">Decrease</button>
+            <button id="resetBtn" class="btn">Reset</button>
+            <button id="increaseBtn" class="btn">Increase</button>
+            <button id="randomBtn" class="btn">Random</button>
+        </section>
     </main>
     <footer>
 
     </footer>
+    <script src="main.js">
+        
+    </script>
 </body>
 </html>

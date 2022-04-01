@@ -2,9 +2,46 @@
 
 Demo for repository.
 
-## JavaScript 30.03.2022
+## JavaScript 01.04.2022
 
 - following will be javascript.
+  <br>
+
+* 1 Variables
+  <br>
+
+* 2 Arithmetic Expression
+  <br>
+
+* 3 User inputs
+  <br>
+
+* 4 Type Conversion
+  <br>
+
+* 5 Const
+  <br>
+
+* 6 Math
+  <br>
+
+* 7 Hypotenuse calculation practice
+  <br>
+
+* 8 Counter program
+  <br>
+
+* 9 Math.random()
+  <br>
+
+* 10 Useful string methods
+  <br>
+
+* 11 Slice
+  <br>
+
+* 12 Method chaining
+  <br>
 
 <hr>
 
