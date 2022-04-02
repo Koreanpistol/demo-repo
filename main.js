@@ -67,7 +67,7 @@ const userInput = document.getElementById('userInput'); // submit button
 
 // MORE COMMON WAY (thou very basic as well)
 
-userInput.addEventListener('click' , getUserDate);
+// userInput.addEventListener('click' , getUserDate);
 
 function getUserDate () {
 let name = userName.value ; 
@@ -246,5 +246,227 @@ let letter = userNameChain.charAt(0).toUpperCase().trim();
 console.log(letter);
 
 
-// *****************************
+// ***************************** IF statements ****************************************************************************************************
+
+userInput.addEventListener('click' , getUserAge);
+
+function getUserAge () {
+    let name = String(userName.value) ; 
+    let age = Number(userAge.value)  ;
+
+    if (age >= 18 ) {
+        console.log(`${name} you are an adult`);
+    }
+    else if (age >= 14)  {
+        console.log(`${name} you are a teenager`);
+    }
+    else if (age >= 6)  {
+        console.log(`${name} you are a child`);
+    }
+    else if(age >= 4) {
+        console.log(`${name} you are a baby!`);
+    }
+    else if (age >= 2) {
+        console.log(`${name} how do you manage to type at such young age?`)
+    }
+    else if (age >= 1) {
+        console.log(`${name} you are a troll`);
+    }
+    else {
+        console.log('You are not born yet')
+    }
+
+}
+
+
+// ****************************** Checked Property ******************************************************************************************
+
+const myCheckBoxBtn = document.getElementById('myCheckBoxBtn');
+const paypalRadio = document.getElementById('paypalRadio');
+const mastercardRadio = document.getElementById('mastercardRadio');
+const visaRadio = document.getElementById('visaRadio');
+const myCheckBox = document.getElementById('myCheckBox');
+
+myCheckBoxBtn.addEventListener('click', checkedFunction);
+
+function checkedFunction() {
+    if(myCheckBox.checked) {
+        if(paypalRadio.checked){
+            console.log(`Your subscription will be payed via paypal option`);
+        }
+        else if(mastercardRadio.checked){
+            console.log(`Your subscription will be payed via mastercard option`);
+        }
+        else if(visaRadio.checked){
+            console.log(`Your subscription will be payed via visa credit card option`);
+        }
+        else {
+            console.log(`Please select payment method before proceeding`);
+        }
+    }
+    else {
+        console.log(`You haven't checked subscription, Good day to you!`)
+    }
+
+}
+
+// ****************************** Switches ************************************************************************************************************************
+
+// switch = statement that examines a value , for a match against many case clauses.
+//          Switch is more efficient that many "else if" statements;
+
+let grade = 95;
+
+switch(true) {
+    case grade >= 90:
+        console.log('You did awesome!');
+        break;
+    case grade >= 81:
+        console.log('You passed!');
+        break;
+    case grade >= 80:
+        console.log('You failed!');
+        break;
+}
+
+// ****************************** AND OR conditions ******************************************************************************************
+
+// && AND (BOTH conditions must be true);
+// || OR (Either condition must be true);
+
+
+let temperature = 15;
+let sunny = true;
+
+if (temperature > 0 && temperature < 30 && sunny){
+    console.log('The weather is good');
+}
+else {
+    console.log('The weather is bad');
+}
+
+////////////////////////////////////////////////////////////////////////////
+if (temperature <= 0 || temperature >= 30) {
+    console.log('Weather is bad!');
+}
+else {
+    console.log('Weather is good!');
+}
+
+// ****************************** NOT logical operator ******************************************************************************************
+
+// ! not logical operator , typically used to reserve a condition's boolean value 
+// true -> false ///// false -> true ;
+
+if (!(sunny)){
+    console.log('its cloudy outside!');
+}
+else {
+    console.log('its sunny outside!');
+}
+
+// ****************************** While Loops ******************************************************************************************
+
+// while some condition is true , potentially infinite.
+
+let whileName;
+
+// while(whileName == '' || whileName == null ){
+//     whileName = window.prompt('Enter you name')
+// };
+// console.log(`Hey ${whileName} how are you?`);
+
+// ****************************** Do While loops ******************************************************************************************
+
+// do while loop = do something , then check the condition , repeat if condition is true.
+
+// do{
+//     whileName = window.prompt('Enter you name')
+//   }
+// while(whileName == '' || whileName == null );
+// console.log(`Hey ${whileName} how are you?`);
+
+// ****************************** For Loops ******************************************************************************************
+
+// for loop - repeat some code a certain amount of times.
+
+for(let i = 1; i <= 5; i++){
+    console.log(i);
+}
+
+// ****************************** Break and Continue statements ******************************************************************************************
+
+// break = breaks out of loop entirely 
+// continue = skip an iteration of a loop 
+
+for(let i = 1; i <= 5; i++){
+    if (i === 3){
+        break; // stops loop after i == 3 ; 
+    }
+    console.log(i);
+}
+
+for(let i = 1; i <= 5; i++){
+    if (i === 3){ 
+        continue; // skips 3 and continues loop
+    }
+    console.log(i);
+}
+
+// ****************************** Nested loops ************************************************************************************************************************
+const responseBoxy = document.getElementById('responseBoxy')
+// nested loop = a loop inside of another loop.
+let rows = 5;
+let columns = 36; 
+let symbol = "$"
+
+for(let i = 0; i <= rows ; i++){ // how many nested loops will be (5)
+    for(let j = 0; j <= columns; j++){ // how many elements on 1 row displayed from loop
+        responseBoxy.innerHTML += symbol; // printed element
+    }
+    responseBoxy.innerHTML += "<br>" // adding breakline after each loop finish
+}
+
+// ****************************** Ternary Operator ******************************************************************************************
+
+// ternary operator = Shortcut for an 'if/else statement'
+//                    Takes 3 operands
+
+// 1. a condition with ? ;
+// 2. expression if True ;
+// 3. expression if False ;
+
+// condition ? expressionIfTrue : expressionIfFalse
+
+checkWinner(false);
+checkWinner(true);
+
+function checkWinner(win){
+    win ? console.log('You Win!') : console.log('You Lose!');
+}
+
+// ****************************** toLocaleString() ******************************************************************************************
+
+// toLocaleString() = returns a string with a language sensitive representation of this number;
+
+// number.toLocaleString(locale , {options});
+//
+// 'locale' = specify that language (undefined = default set in browser);
+// 'options' = object with formatting options;
+
+let myNumberBe = 100;
+
+console.log(myNumberBe.toLocaleString("en-US", {style: "currency" , currency:"USD", minimumFractionDigits: 1, maximumFractionDigits: 1}));
+console.log(myNumberBe.toLocaleString("hi-IN", {style: "currency" , currency:"EUR", minimumFractionDigits: 2, maximumFractionDigits: 2}));
+console.log(myNumberBe.toLocaleString("de-DE", {style: "currency" , currency:"INR", minimumFractionDigits: 3, maximumFractionDigits: 3}));
+console.log(myNumberBe.toLocaleString(undefined, {style: "percent"}));
+console.log(myNumberBe.toLocaleString("de-DE", {style: "unit" , unit:"celsius"}));
+console.log(myNumberBe.toLocaleString("de-DE", {style: "unit" , unit:"kilobyte"}));
+
+// https://v8.dev/features/intl-numberformat a bit more source about options.
+
+
+
+
+
 
