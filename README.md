@@ -43,6 +43,32 @@ Demo for repository.
 * 12 Method chaining
   <br>
 
+* 13 IF statements
+  <br>
+
+* 14 Checked Property
+  <br>
+
+* 15 Switch
+  <br>
+
+* 16 AND // OR conditions
+  <br>
+
+* 17 ! not logical operator
+  <br>
+
+* 18 While / Do While
+  <br>
+
+* 19 For Loop / Break and Continue statements / Nested Loops
+  <br>
+
+* 20 Ternary Operator
+  <br>
+
+* 21 toLocaleString()
+<br>
 <hr>
 
 ## 29.03.2022 CSS.
