@@ -467,6 +467,163 @@ console.log(myNumberBe.toLocaleString("de-DE", {style: "unit" , unit:"kilobyte"}
 
 
 
+// ****************************** Guessing game ******************************************************************************************
+
+const textGuess = document.getElementById('guessTimer');
+const buttonNumber = document.getElementById('sendGuess');
+const UserGuess = document.getElementById('numberGuess');
+const randomNumberForGuess = Math.floor(Math.random() * 10 + 1)
+console.log(`${randomNumberForGuess} number for guess game`)
+buttonNumber.addEventListener('click', guessFunction);
+
+let guessFailCount = 0;
+textGuess.innerHTML = `Your Guess:${guessFailCount}`
+
+function guessFunction () {
+    let guess = Number(UserGuess.value);
+    if (randomNumberForGuess === guess) {
+        textGuess.innerHTML = `Your won! It took you:${guessFailCount} attempts`
+    }
+    else if(randomNumberForGuess > guess || randomNumberForGuess < guess) {
+        guessFailCount++;
+        textGuess.innerHTML = `Your Guess:${guessFailCount} Try Again!`; 
+    }
+}
+
+
+// ****************************** Arrays ******************************************************************************************
+
+// array = think of it as variable that can store multiple values.
+
+let fruits = ['apple', 'orange' , 'banana'];
+
+// console.log(fruits);
+// let fruits[0] = 'cocunut';
+// console.log(fruits);
+
+fruits.push('lemon'); // add an element 'lemon' to the end of array;
+fruits.pop(); // removes last element 'lemon' that we above added ^ ;
+fruits.unshift('mango'); // add an element 'mango' to the beginning of array;
+fruits.shift(); // removes an element in the beginning of array 'mango' that was added above ^ ;
+
+let arrayLength = fruits.length; // .length checks the lenth of fruits array in this situation;
+let arrayIndex = fruits.indexOf('kiwi'); // shows the index of array element , as 'kiwi' doesnt appear to be in array it will display -1;
+
+// console.log(arrayIndex);
+
+// ******************** Looping throught Array ******************************************************************************************
+
+console.log(fruits);
+
+fruits = fruits.sort(); // sorts fruits array in alphabetic way; which is in for loop below;
+
+for(let i = 0 ; i < fruits.length ; i++){ // for loop that starts from first index [0] and goes till the last index;
+    console.log(fruits[i]);
+};
+
+for(let i = fruits.length -1 ; i >= 0 ; i--){ // for loop that starts from last index and goes till the first index [0];
+    console.log(fruits[i]);
+};
+
+fuits = fruits.sort().reverse(); // sorts fruits array in reversed alphabetic way; which is in for loop below;
+
+for(let i of fruits) {
+    console.log(i);  // of statement will also declare elements of array;
+};
+
+// ******************** 2D arrays *********************************************************************************************************
+
+
+let vegetables = ['cheese' , 'onions' , 'tomatoes'];
+let meat = ['chicken' , 'pork' , 'fish'];
+
+let groceryList = [fruits , vegetables , meat];
+
+for(let i of groceryList){  // this for displays 3 arrays of groceryList
+    for(y of i ){           // this for loop displays every element of grocerylist arrays seperatly;
+        console.log(y);
+    }
+}
+
+// ******************** Spread Operator ****************************************************************************************************
+
+// spread operator = allows an iterable such as an 
+//  ...              array or string to be expanded 
+//                   in places where zero or more
+//                   arguments are expected
+//                   (unpacks elements)
+
+
+let numbersArray = [1,2,3,4,5,6,7,8,9,10];
+
+let maximumNumber = Math.max(...numbersArray); // with ... you spread array into different elements and with allow Math.max to pick highest element out of it
+console.log(maximumNumber);
+
+let class1 = ['SpongeBoB' , 'Patrick' , 'Sandy'];
+let class2 = ['Squidward' , 'Mr.Krabs' , 'Plankton'];
+
+class1.push(...class2); // with ... you split into elements class2 Array and add each element into Array class1 seperatly rather then adding whole Array into 1 slot
+console.log(class1);
+console.log(...class1);
+
+// ******************** Rest parameter ****************************************************************************************************
+
+// rest parameter = allows a function to accept an indefinite number of arguments as an array;
+
+let a = 1;
+let b = 2;
+let c = 3;
+let d = 4;
+let e = 5;
+let f = 6;
+let g = 7;
+let h = 8;
+
+console.log(restParamSum(a,b,c,d,e,f,g,h)); 
+
+function restParamSum (...numbers){
+    let totalSum = 0;
+    for(let i of numbers){
+        totalSum += i;
+    }
+    return totalSum
+}
+
+
+// ******************** Callbacks ****************************************************************************************************
+
+// callback = a function passed as an argument to another function;
+
+// Ensures that function is not going to to run before a task is complete.
+// Makes functions more asynchronous code. ( when one function has to wait for another function)
+// that helps us avoid errors and potential problems for example Wait for a file to load before proceeding.
+
+
+responseCallBack = document.getElementById('callbackBox');
+
+sumCallback(10,35,displayDOM);
+sumCallback(33,81,displayConsole);
+
+
+function sumCallback(num1 , num2 , callBack) {
+let callSum = num1 + num2;
+return callBack(callSum);
+};
+
+function displayDOM (output) {
+return responseCallBack.innerHTML = `Callback text with output:${output}`;
+};
+
+function displayConsole (output){
+return console.log(`callback text with output:${output}`);
+};
+
+
+
+
+
+
+
 
 
 
