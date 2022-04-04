@@ -2,7 +2,7 @@
 
 Demo for repository.
 
-## JavaScript 01.04.2022
+## JavaScript 04.04.2022
 
 - following will be javascript.
   <br>
@@ -68,6 +68,27 @@ Demo for repository.
   <br>
 
 * 21 toLocaleString()
+  <br>
+
+* 22 Guessing game
+  <br>
+
+* 23 Arrays
+  <br>
+
+* 24 Looping throught Array
+  <br>
+
+* 25 2D arrays
+  <br>
+
+* 26 Spread Operator
+  <br>
+
+* 27 Rest parameter
+  <br>
+
+* 28 Callbacks
 <br>
 <hr>
 
