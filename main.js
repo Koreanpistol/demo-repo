@@ -618,7 +618,65 @@ function displayConsole (output){
 return console.log(`callback text with output:${output}`);
 };
 
-// ********************
+// ******************** array.forEach() ********************************************************************************
+
+let forEachList = ['dota2' , 'league of legends', 'r6S', 'ff14', 'bdo']
+
+forEachList.forEach(toCapitalLetter);
+forEachList.forEach(printFunction);
+
+// substring(indexStart);
+// substring(indexStart, indexEnd);
+
+function toCapitalLetter(element , index , array){
+    array[index] = element[0].toUpperCase() + element.substring(1); 
+};
+
+function printFunction (element) {
+    console.log(element);
+};
+
+// ******************** Array.filter() ****************************************************************************************************
+
+let fuckingNumbers = [33, 123,12345,676,1235,786,12,15156,12312];
+
+let moreFuckingNumbers = fuckingNumbers.filter(checkNumberFFS); 
+
+moreFuckingNumbers.forEach(printFunction);
+moreFuckingNumbers.sort((a , b) => a - b).forEach(printFunction); // acending order
+moreFuckingNumbers.sort((a , b) => b - a).forEach(printFunction); // decending order
+function checkNumberFFS (element) {
+    return element >= 500;
+
+};
+
+// ******************** Array.map() ****************************************************************************************************
+
+// executes a provided callback function 
+// once for each array element 
+// AND creates new array;
+
+let mapArray = [1,2,3,4,5,6,7,8,9,10];
+
+function square(element){
+    return Math.pow(element , 2);
+};
+
+let squares = mapArray.map(square);
+
+squares.forEach(printFunction);
+
+
+// ******************** Array.reduce() ****************************************************************************************************
+
+//array.reduce() = reduces an array to single value
+
+let totalNumber = mapArray.reduce((total, element) => {
+    return total+element;
+})
+
+console.log(`$${totalNumber}`);
+
 
 
 
