@@ -677,6 +677,16 @@ let totalNumber = mapArray.reduce((total, element) => {
 
 console.log(`$${totalNumber}`);
 
+// ******************** arrow function expression *******************************************************************************************
+
+// arrow function = compact alternative to traditional function () => {} ;
+
+const textConsole = (textInsert) => {
+    console.log(`Hello ${textInsert} how are you?`);
+};
+
+textConsole(`Andrius`);
+
 
 
 
